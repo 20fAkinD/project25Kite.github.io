@@ -3,3 +3,11 @@
 body {
 background-image: linear-gradient(to right, blue , lightblue);
 }
+
+body.index-page { 
+
+font-family: 'Courier New' , monospace;
+font-size: 40px;
+text-aling: center;
+ 
+}
