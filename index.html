@@ -25,13 +25,15 @@
 	
 	
 	
- <!-- Navigation Bar -->	
+ <!-- Navigation Bar -->
+<div class =".container"> 
 	<ul>
   <li><a href="#home">Home</a></li>
   <li><a href="#news">IMAP</a></li>
   <li><a href="#contact">More Info</a></li>
   <li><a href="#about">About Me</a></li>
 </ul>
+</div>
 
 		
 </body>
@@ -42,6 +44,10 @@
  <!-- All style codes go in this section -->	
 
 <style>
+.container {
+display: flex;
+min-heigh: calc(100vh- 80px);
+}
 
 h1 { 
 color: black;
@@ -56,7 +62,7 @@ background color: white;
 text-align: center;
 font-size: 25px;
 border-style: solid;
-flex: 3;
+flex: 1;
 display: flex;
 flex-direction: column;
 justify-content: center;
