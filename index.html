@@ -12,13 +12,14 @@
 	<div class = "h1">
 	<h1> IMAP and More</h1>
 	</div>
+	<div class ="content">
 	<h2> Overview </h2>
 	<p> IMAP Internet Message Protocol is one of worlds well known web-technology or protocols
 	
 	supporting millions of users on a global scale. IT is the modern standard for mail management across
 	multiple devices in real-time. IMAP keeps messages on the server-allowing seamless access, syncrhonization, and management from anywhere. 
 	Built for mobility and scalability and supports major provides such as Google, Yahoo, and Outlook. 
-	
+	</div>
 	</p>
 	
 	
@@ -41,7 +42,34 @@
  <!-- All style codes go in this section -->	
 
 <style>
-
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
 h1 { 
 color: black;
 margin-left: 40px;
@@ -56,7 +84,6 @@ background color: white;
 text-align: center;
 font-size: 25px;
 border-style: solid;
-
 }
 </style>
 
