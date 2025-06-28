@@ -6,49 +6,39 @@
 </head>
 
 <!-- Navigation Bar -->
- <div class ="container">
-  <nav>
-	<ul>
-  <li><a href="index.html"></a>Home</li>
-  <li><a href="#news">IMAP</a></li>
-  <li><a href="#contact">POP3</a></li>
-  <li><a href="#about">Resources</a></li>
-</ul>
-</nav>
-</div>
-<main>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#news">IMAP</a></li>
+        <li><a href="#contact">POP3</a></li>
+        <li><a href="#about">Resources</a></li>
+      </ul>
+    </nav>
+  </div>
 <body>
-	<div class = "h1">
-	<h1>Ineternet Messaging Access Protocol</h1>
-	</div>
 	
-	 <h2>What is it ? </h2>
-	 
-	
-	<img src ="images/image1.jpg" alt="Test" width="100" height="100" style="margin-right: 10px;"> 
-	<p>
-		IMAP Internet Message Protocol is one of worlds well known web-technology or protocols
-	supporting millions of users on a global scale. It is the modern standard for mail management across
-	multiple devices in real-time. IMAP keeps messages on the server-allowing seamless access, syncrhonization, and management from anywhere. 
-	Built for mobility and scalability and supports major provides such as Google, Yahoo, and Outlook. 
-	</p>
-	
-	
-	<h3>Features and Functionality</h3>
-	<p> 
-		•	IMAP establishes a connection to the mail server when user’s login
-		</p>
-		<p>
-		•	Username and passwords are verified, and messages are downloaded only when users access folders shown such as the Inbox and outbox folders
-		</p>
-		<p>
-		•	Messages synchronize and emails remain on the server until the user deletes them.
-	</p>
-	
-	
-</body>
-</main>
+	 <h1>Internet Messaging Access Protocol</h1>
 
+  <h2 style="text-align: center;">What is it?</h2>
+
+  <img src="images/image1.jpg" alt="IMAP Illustration">
+
+  <p>
+    IMAP (Internet Message Access Protocol) is one of the world’s most widely used communication protocols,
+    supporting millions of users globally. It enables modern email synchronization across multiple devices in real time.
+    IMAP stores messages on the server, allowing users to manage their emails seamlessly from anywhere.
+    Major providers like Google, Yahoo, and Outlook use IMAP to ensure mobile-friendly and scalable email access.
+  </p>
+
+  <h3 style="text-align: center;">Features and Functionality</h3>
+  <div class="features">
+    <p>• IMAP establishes a connection to the mail server when users log in.</p>
+    <p>• Username and passwords are verified, and messages are downloaded only when users access specific folders like Inbox or Outbox.</p>
+    <p>• Emails stay on the server and remain synchronized until the user deletes them.</p>
+  </div>
+
+</body>
 </html>
 
 
@@ -56,30 +46,62 @@
 
 <style>
 
-h1 { 
-color: black;
-margin-center: 40px;
-background-color: lightblue;
-text-align: center;
-font-size: 50px;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
 
-p {
-background-color: white;
-text-align: center;
-font-size: 18;
-}
+    .container nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+    }
 
-div {
-border-style: solid;
-background-color: white;
-font-size: 18;
-padding: 10px;
-width: 300px;
-height: 300px;
-text-align: justify;
-}
+    .container nav ul li {
+      padding: 14px 20px;
+    }
 
+    .container nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
 
+    h1 {
+      color: black;
+      background-color: lightblue;
+      text-align: center;
+      font-size: 50px;
+      margin-top: 0;
+    }
 
-</style>
+    p {
+      background-color: white;
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 10px;
+      max-width: 800px;
+      text-align: justify;
+      margin: 10px auto;
+    }
+
+    img {
+      float: left;
+      margin: 10px 20px 10px 0;
+      width: 200px;
+      height: auto;
+    }
+
+    .features {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .features p {
+      text-align: left;
+      background-color: transparent;
+    }
+  </style>
