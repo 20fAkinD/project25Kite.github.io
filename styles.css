@@ -54,7 +54,7 @@ li a:hover:not(.active) {
   border-radius: 10px;
   border: 2px solid #ccc;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  display: none; /* will be shown by JS */
+  display: none; /
 }
 
 #question-text {
