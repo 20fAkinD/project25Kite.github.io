@@ -10,21 +10,19 @@
 <!-- 3 JUL 2025 -->
 <!-- Summer 2025 -->
 
-
-
 <!-- Navigation Bar -->
- <div class ="container">
-	<nav>
-		<ul>
-		  <li><a href="index.html">Home</a></li>
-		  <li><a href="infoTab.html">IMAP</a></li>
-		  <li><a href="MoreInfo.html">More Protocols</a></li>
-		  <li><a href="resources.html">Resources</a></li>
-		  <li><a href="https://ksuweb.github.io/IT3203/">COURSE SITE</a></li>
-		  <li><a href="quiz.html">Quiz</a></li>
-		 </ul>
-	</nav>
-</div>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infoTab.html">IMAP</a></li>
+        <li><a href="MoreInfo.html">More Protocols</a></li>
+        <li><a href="resources.html">Resources</a></li>
+		<li><a href="https://ksuweb.github.io/IT3203/">COURSE SITE</a></li>
+		<li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
 
 
   <!-- Body elements -->
@@ -244,8 +242,22 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
       padding: 50px;
       background-color: #f4f4f4;
     }
+	
+ .container nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+    }
 
-   
+    .container nav ul li {
+      padding: 14px 20px;
+    }
+
+    .container nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
 
     h1 {
       color: black;
