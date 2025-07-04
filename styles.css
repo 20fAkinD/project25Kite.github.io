@@ -43,3 +43,42 @@ li a.active {
 li a:hover:not(.active) {
   background-color: #555;
   color: white;
+
+ .container nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+    }
+
+    .container nav ul li {
+      padding: 14px 20px;
+    }
+
+    .container nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+	
+	#quiz {
+  font-size: 20px;
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none; /* will be shown by JS */
+}
+
+#question-text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#answers label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
