@@ -61,7 +61,7 @@
 </body>
 
  <script>
-    // Select elements
+    // Constraints are assigned. This helps target elements within the form when the quiz is ran
     const startButton = document.getElementById('quiz-btn');
     const quizContainer = document.getElementById('quiz');
     const questionText = document.getElementById('question-text');
@@ -70,7 +70,7 @@
     const nextBtn = document.getElementById('next');
     const restartButton = document.getElementById('restart');
 
-    // Quiz Data
+    // Quiz data is stored
     const quizData = [
       {
         type: 'fill',
@@ -105,7 +105,7 @@
 
     let currentQuestion = 0;
     let score = 0;
-
+//Quiz determines correct answer by "IF" statements
     startButton.addEventListener('click', () => {
       startButton.style.display = 'none';
       quizContainer.style.display = 'block';
