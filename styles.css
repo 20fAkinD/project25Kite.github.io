@@ -43,7 +43,7 @@ li a.active {
 li a:hover:not(.active) {
   background-color: #555;
   color: white;
-
+}
  .container nav ul {
       list-style: none;
       padding: 0;
