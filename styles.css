@@ -44,22 +44,7 @@ li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
- #.container nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      background-color: #333;
-    }
-
-    #.container nav ul li {
-      padding: 14px 20px;
-    }
-
-    #.container nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
+ 
 	
 	#quiz {
   font-size: 20px;
