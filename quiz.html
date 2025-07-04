@@ -35,23 +35,27 @@
 
 		<button id="quiz-btn"> Start Quiz </button>
 		
-		  <div id="quiz">
-		  
-	<form id="quiz-form">
-		  
-			<div id="question-text"></div>
-			
-			<div id="answers"></div>
-		<div>
-			<button id="submit">Submit</button>
-			<button id="next" style="display:none;">Next</button>
-			<button id="restart" style="display:none;">Restart Quiz</button>
-		</div>
-		
-		
-	   </form>
-	   
-	   </div>
+		 <!-- Quiz Container -->
+			<div id="quiz" style="display: none; padding: 20px; background: white; border-radius: 10px; max-width: 700px; margin-top: 20px;">
+
+			  <!-- Quiz Form -->
+			  <form id="quiz-form">
+				
+				<!-- Question Display -->
+				<div id="question-text" style="font-size: 1.5em; font-weight: bold; margin-bottom: 20px;"></div>
+				
+				<!-- Answers Area -->
+				<div id="answers" style="margin-bottom: 20px;"></div>
+				
+				<!-- Action Buttons -->
+				<div>
+				  <button id="submit" type="button">Submit</button>
+				  <button id="next" type="button" style="display:none;">Next</button>
+				  <button id="restart" type="button" style="display:none;">Restart Quiz</button>
+				</div>
+				
+			  </form>
+			</div>
 		
 		<img src ="images\QUIZTIME.jpg" alt="quiz">
 		
