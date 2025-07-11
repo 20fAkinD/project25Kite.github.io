@@ -44,7 +44,7 @@
 	</div>
 	
 	
-	<ul class="w3-ul">
+	<ul class="custom-list">
 		<li>Internet Message Access Protocol: Allows users to check and manage emails from different devices without missing or losing updates.</li>
 		<li>Post Office Protocol: Publised in 1984. Internet Standard Protocol that works on the application layer. Used to access email from the mail server but requires internet connectivity at all times.</li>
 		<li>Simple Mail Transfer Protocol: a standard internet protocol used for sending and receiving email messages.</li>
@@ -65,6 +65,28 @@
  <!-- All style codes go in this section -->	
 
 <style>
+
+
+custom-list {
+
+list-style: none;
+padding 0;
+margin: 40px auto;
+max-width: 900px;
+font-size: 20px;
+background: #f5faff;
+border: 2px solid #d3e3f0;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+custom-list li {
+  padding: 20px;
+  border-bottom: 1px solid #d3e3f0;
+  position: relative;
+  transition: background 0.3s ease;
+}
 
 
 h1 { 
