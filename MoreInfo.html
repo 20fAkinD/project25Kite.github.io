@@ -66,16 +66,22 @@
 	- Spam filtering settings that identify unwanted or suspicious emails. 
 	</p>
 	
-	
+	<!--Allows for video play for most browsers-->
 
-	<h5 style="text-align: center; font-size: 26px;">Additional Info</h5>
+	
+	<div class="video-wrapper">
+	  <h4>Additional Info</h4>
+	  <iframe width="560" height="315"
+		src="https://www.youtube.com/embed/iBrjBsmyadc"
+		title="YouTube video"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen>
+	  </iframe>
+	</div>
 	
 </body>
 
-	<iframe width="420" height="315"
-			src="https://www.youtube.com/embed/iBrjBsmyadc">
-			</iframe>
-			
 	
 </html>
 
@@ -83,6 +89,19 @@
 <!-- Style Codes -->
 
 <style>
+
+.video-wrapper {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.video-wrapper iframe {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 .chart-center {
   text-align: center;
