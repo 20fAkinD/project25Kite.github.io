@@ -1,64 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>More Protocols</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<!-- Kite Xavier-->
-<!-- Project Milestone 1 -->
-<!-- Summer 2025 -->
-
-<!-- Navigation Bar -->
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="infoTab.html">IMAP</a></li>
-        <li><a href="#contact">More Protocols</a></li>
-        <li><a href="resources.html">Resources</a></li>
-		<li><a href="https://ksuweb.github.io/IT3203/">COURSE SITE</a></li>
-		<li><a href="quiz.html">Quiz</a></li>
-      </ul>
-    </nav>
-  </div>
- <!-- Everything involiving the body goes here --> 
-<body>
-	
-	 <h1>POP3 and SMTP </h1>
-
-  <h2 style="text-align: center;">Post Office Protocol Version 3</h2>
-
-  <p>
-	<img src ="images\mailPost.jpg" class="right" alt="POP3 Flow Map">Post Office protocol helps manages traffic simier to IMAP and is consider the sister protocol in the tech field. 
-	Unlike IMAP, POP3 downloads emails to the local drive from the mail server after connection establishes. Users
-	can configure email clients to check messages at set intervals. However POP3 lacks real-time synchronization which
-	is considered a preferred feature amongst consumers. 
-  </p>
-
-  <h3 style="text-align: center;">Simple Mail Transfer Protocol</h3>
-  <p>
-	<img src ="images\mailSimple.jpg" alt="SMTP Flow Map">SMTP or Simple Mail Transfer Protocol that works and supports POP3 and IMAP. SMTP ensures end-to-end delivery is used between two clients.
-	The email is sent from the senders client to the recipients client, completeing the client-to-client communications. This is successfully done through TCP/IP
-	which IMAP, POP3, and SMTP use to effectiviely send messages over a mail server. 
-  </p>
-  
-  <!-- More information will be added here. Project Milestone #3 -->
-  
-  
-  <img src = "images\Chart.png" class="center" alt="Protocol chart">
-
-  
-  <h4 style="text-align: center; font-size: 24px;"> Advantages </h4>
-  
-  
-</body>
-
-</html>
-
-
-<!-- Style Codes -->
-
-<style>
-
+  <meta charset="UTF-8">
+  <title>More Protocols</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional if using external stylesheet -->
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -66,11 +12,13 @@
       background-color: #f4f4f4;
     }
 
+    /* Navigation Bar */
     .container nav ul {
       list-style: none;
       padding: 0;
       display: flex;
       background-color: #333;
+      margin: 0;
     }
 
     .container nav ul li {
@@ -82,6 +30,10 @@
       text-decoration: none;
     }
 
+    .container nav ul li a:hover {
+      color: #00ffff;
+    }
+
     h1 {
       color: black;
       background-color: lightblue;
@@ -90,10 +42,13 @@
       margin-top: 0;
     }
 
-	
+    h2, h3, h4 {
+      text-align: center;
+    }
 
     p {
       background-color: black;
+      color: white;
       font-size: 18px;
       line-height: 1.6;
       padding: 10px;
@@ -102,28 +57,29 @@
       margin: 10px auto;
     }
 
+    /* Image placement classes */
     img {
-      float: left;
-      margin: 10px 20px 10px 0;
       width: 300px;
       height: 200px;
-    }
-	
-	.right {
-      float: right;
-      margin: 10px 0 10px 20px;
-      width: 300px;
-      height: 200px;
-    }
-	
-	.center {
-	 padding: 10px;
-      float: center;
-      margin: 10px auto;
-      width: 275px;
-      height: 300px;
+      object-fit: cover;
     }
 
+    .right {
+      float: right;
+      margin: 10px 0 10px 20px;
+    }
+
+    .left {
+      float: left;
+      margin: 10px 20px 10px 0;
+    }
+
+    .center {
+      display: block;
+      margin: 20px auto;
+      width: 275px;
+      height: auto;
+    }
 
     .features {
       max-width: 800px;
@@ -133,5 +89,75 @@
     .features p {
       text-align: left;
       background-color: transparent;
+      color: black;
+    }
+
+    /* Clearfix for floated elements */
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
+</head>
+
+<body>
+  <!-- Kite Xavier -->
+  <!-- Project Milestone 1 -->
+  <!-- Summer 2025 -->
+
+  <!-- Navigation Bar -->
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="infoTab.html">IMAP</a></li>
+        <li><a href="#contact">More Protocols</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="https://ksuweb.github.io/IT3203/">COURSE SITE</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Page Title -->
+  <h1>POP3 and SMTP</h1>
+
+  <!-- POP3 Section -->
+  <h2>Post Office Protocol Version 3</h2>
+  <div class="clearfix">
+    <img src="images/mailPost.jpg" class="right" alt="POP3 Flow Map">
+    <p>
+      Post Office Protocol (POP3) helps manage email traffic similarly to IMAP and is considered its sister protocol. 
+      Unlike IMAP, POP3 downloads emails to the local drive from the mail server after the connection is established. 
+      Users can configure email clients to check messages at set intervals. However, POP3 lacks real-time synchronization, 
+      which is considered a preferred feature among consumers.
+    </p>
+  </div>
+
+  <!-- SMTP Section -->
+  <h3>Simple Mail Transfer Protocol</h3>
+  <div class="clearfix">
+    <img src="images/mailSimple.jpg" class="left" alt="SMTP Flow Map">
+    <p>
+      SMTP, or Simple Mail Transfer Protocol, works alongside POP3 and IMAP to send email. 
+      SMTP ensures end-to-end delivery between email clients. Messages are sent from the sender’s 
+      client to the recipient’s client, completing the client-to-client communication. 
+      This is achieved using the TCP/IP protocol stack, which all three protocols utilize to 
+      effectively transfer messages over a mail server.
+    </p>
+  </div>
+
+  <!-- Protocol Chart -->
+  <img src="images/Chart.png" class="center" alt="Protocol chart showing POP3, IMAP, and SMTP relationships">
+
+  <!-- Advantages Section -->
+  <h4>Advantages</h4>
+  <div class="features">
+    <p>
+      More information will be added here as part of Project Milestone #3. This section will 
+      include a breakdown of the strengths and weaknesses of each protocol in different real-world applications.
+    </p>
+  </div>
+</body>
+</html>
